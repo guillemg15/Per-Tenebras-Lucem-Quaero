@@ -125,7 +125,7 @@ namespace SA
             Vector3 dir = -Vector3.up;
             float dis = toGround + 0.3f;
             RaycastHit hit;
-            Debug.DrawRay(origin, dir * dis);
+            Debug.DrawRay(origin, dir * dis, Color.red);
             if(Physics.Raycast(origin,dir,out hit, dis, ignoreLayers))
             {
                 r = true;
